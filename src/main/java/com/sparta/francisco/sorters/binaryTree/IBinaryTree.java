@@ -1,5 +1,7 @@
 package com.sparta.francisco.sorters.binaryTree;
 
+import com.sparta.francisco.exceptions.ChildNotFoundException;
+
 public interface IBinaryTree {
     int getRootElement();
 

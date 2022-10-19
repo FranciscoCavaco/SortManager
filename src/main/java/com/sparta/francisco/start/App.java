@@ -1,4 +1,4 @@
-package com.sparta.francisco;
+package com.sparta.francisco.start;
 
 /**
  * Hello world!
