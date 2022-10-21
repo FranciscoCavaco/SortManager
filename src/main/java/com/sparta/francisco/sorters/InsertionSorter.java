@@ -2,7 +2,8 @@ package com.sparta.francisco.sorters;
 
 public class InsertionSorter implements Sorter{
 
-    public void getSorter() {
-
+    @Override
+    public int[] sortArray(int[] arrayToSort) {
+        return new int[0];
     }
 }

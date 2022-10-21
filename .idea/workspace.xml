@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf935502-87d7-4e34-b197-bf4e98a03d48" name="Changes" comment="aDDED sort loader and factory">
+    <list default="true" id="bf935502-87d7-4e34-b197-bf4e98a03d48" name="Changes" comment="Sort Loader refactored">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/logging/CustomConsoleHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/logging/CustomFileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/logging/CustomFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/logging/CustomLoggerConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/display/DisplayManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/BinarySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/BinarySorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/BubbleSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/Sorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/binaryTree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/binaryTree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/binaryTree/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/InsertionSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/MergeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/QuickSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/QuickSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/start/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/start/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/start/SortFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/start/SortLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/start/SortLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +47,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/mastigador/IdeaProjects/Week2SorterProject"
+    "last_opened_file_path": "C:/Users/mastigador/IdeaProjects/Week2SorterProject/src/main/java/com/sparta/francisco/logging"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.sparta.francisco.exceptions" />
       <recent name="com.sparta.francisco.sorters.binaryTree" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mastigador\IdeaProjects\Week2SorterProject\src\main\java\com\sparta\francisco\logging" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666221668470</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sort Loader refactored">
+      <created>1666342285169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666342285169</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BinaryTree added" />
     <MESSAGE value="aDDED sort loader and factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="aDDED sort loader and factory" />
+    <MESSAGE value="Sort Loader refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sort Loader refactored" />
   </component>
 </project>
