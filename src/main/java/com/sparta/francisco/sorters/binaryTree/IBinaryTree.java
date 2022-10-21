@@ -13,10 +13,6 @@ public interface IBinaryTree {
 
     boolean findElement(int value);
 
-    int getLeftChild(int element) throws ChildNotFoundException;
-
-    int getRightChild(int element) throws ChildNotFoundException;
-
     int[] getSortedTreeAsc();
 
     int[] getSortedTreeDesc();

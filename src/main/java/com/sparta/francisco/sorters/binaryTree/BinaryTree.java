@@ -9,10 +9,6 @@ public class BinaryTree implements IBinaryTree {
         this.rootNode = new Node(element);
     }
 
-    public void addElementToTree(int element){
-        addNodeToTree(rootNode, element);
-    }
-
 
     private void addNodeToTree(Node node, int element) {
         if (element < node.getValue()) {
@@ -32,7 +28,7 @@ public class BinaryTree implements IBinaryTree {
 
     @Override
     public int getRootElement() {
-        return 0;
+        return rootNode.getValue();
     }
 
     @Override
@@ -42,27 +38,21 @@ public class BinaryTree implements IBinaryTree {
 
     @Override
     public void addElement(int element) {
+        addNodeToTree(rootNode, element);
 
     }
 
     @Override
     public void addElements(int[] elements) {
+        for (int i=0; i< elements.length; i++){
+            addElement(elements[i]);
+        }
 
     }
 
     public boolean findElement(int element) {
         Node node = findNode(element);
         return node != null;
-    }
-
-    @Override
-    public int getLeftChild(int element) throws ChildNotFoundException {
-        return 0;
-    }
-
-    @Override
-    public int getRightChild(int element) throws ChildNotFoundException {
-        return 0;
     }
 
     @Override
@@ -90,6 +80,11 @@ public class BinaryTree implements IBinaryTree {
         return null;
     }
 
+
+
+
+
+
     public static class Node {
         private final int value;
         private Node leftChild;
@@ -102,7 +97,7 @@ public class BinaryTree implements IBinaryTree {
         public int getValue() {
             return value;
         }
-
+        
         public Node getLeftChild() {
             return leftChild;
         }
