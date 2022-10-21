@@ -9,6 +9,6 @@ import com.sparta.francisco.exceptions.SorterLoaderException;
 public class App 
 {
     public static void main( String[] args ) throws SorterLoaderException {
-        SortLoader.arrayInitializer(36);
+        SortLoader.menu();
     }
 }

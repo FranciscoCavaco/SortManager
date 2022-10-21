@@ -2,6 +2,7 @@ package com.sparta.francisco.start;
 
 import com.sparta.francisco.display.DisplayManager;
 import com.sparta.francisco.exceptions.SorterLoaderException;
+import com.sparta.francisco.sorters.Sorter;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -9,8 +10,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static com.sparta.francisco.display.DisplayManager.correctFormat;
-import static com.sparta.francisco.display.DisplayManager.incorrectFormat;
+import static com.sparta.francisco.display.DisplayManager.*;
 
 public class SortLoader {
 
@@ -18,9 +18,11 @@ public class SortLoader {
     public static void menu() throws SorterLoaderException {
         Scanner input = new Scanner(System.in);
         DisplayManager.printMenu();
-        SortFactory.getSorter(numberScanner("Menu"));
+        Sorter sorter = SortFactory.getSorter(numberScanner("Menu"));
         DisplayManager.printArraySizePrompt();
-        arrayInitializer(numberScanner("ArraySize"));
+        int[] unsortedArray = arrayInitializer(numberScanner("ArraySize"));
+        int[] sortedArray = sorter.sort(unsortedArray);
+        DisplayManager.printSortedArray(sortedArray);
     }
 
     private static String input() {
@@ -66,6 +68,7 @@ public class SortLoader {
             unsortedArray[i] = random.nextInt(1000)+1;
         }
         logger.log(Level.INFO, "Output list: " + Arrays.toString(unsortedArray));
+        printUnsortedArray(unsortedArray);
 
         return unsortedArray;
     }
