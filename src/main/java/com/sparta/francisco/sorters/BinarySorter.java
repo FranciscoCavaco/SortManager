@@ -6,9 +6,12 @@ public class BinarySorter implements Sorter{
 
     @Override
     public int[] sort(int[] arrayToSort) {
-        BinaryTree binaryTree = new BinaryTree(arrayToSort[0]);
+        BinaryTree binaryTree = new BinaryTree();
 
-        binaryTree.addElements(arrayToSort);
-        return new int[]{0};
+        for (int i = 0; i < arrayToSort.length; i++) {
+            binaryTree.insert(arrayToSort[i]);
+        }
+
+        return binaryTree.inorder();
     }
 }
