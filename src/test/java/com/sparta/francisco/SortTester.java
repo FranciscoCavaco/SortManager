@@ -68,5 +68,25 @@ public class SortTester {
         }
     }
 
+    @Test
+    public void testArrayWithDuplicates() {
+        int[] unsortedArray = {7,2,4,6,1,3,8,5,1,4,8};
+        int[] sortedArray = sorter.sort(unsortedArray);
+        Assertions.assertEquals(sortedArray.length, unsortedArray.length);
+        for (int i = 0; i < sortedArray.length-1; i++) {
+            Assertions.assertTrue(sortedArray[i+1] >= sortedArray[i]);
+        }
+    }
+
+    @Test
+    public void testSingleLengthArray() {
+        int[] unsortedArray = {8};
+        int[] sortedArray = sorter.sort(unsortedArray);
+        Assertions.assertEquals(sortedArray.length, unsortedArray.length);
+        for (int i = 0; i < sortedArray.length-1; i++) {
+            Assertions.assertTrue(sortedArray[i+1] >= sortedArray[i]);
+        }
+    }
+
 
 }
