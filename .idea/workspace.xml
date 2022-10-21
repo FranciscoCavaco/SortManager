@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf935502-87d7-4e34-b197-bf4e98a03d48" name="Changes" comment="Quicksort Added">
+    <list default="true" id="bf935502-87d7-4e34-b197-bf4e98a03d48" name="Changes" comment="Insertion Sort added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/francisco/sorters/InsertionSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/my-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my-log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/francisco/SortTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/francisco/SortTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,23 +51,93 @@
       <recent name="C:\Users\mastigador\IdeaProjects\Week2SorterProject\src\main\java\com\sparta\francisco\logging" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.francisco.start.App" />
+  <component name="RunManager" selected="JUnit.SortTester.testLargeArray">
+    <configuration name="SortTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Week2SorterProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sparta.francisco.start.*" />
+          <option name="PATTERN" value="com.sparta.francisco.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.francisco" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.francisco.SortTester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTester.testAlreadySortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Week2SorterProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.francisco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.francisco" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.francisco.SortTester" />
+      <option name="METHOD_NAME" value="testAlreadySortedArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTester.testIsSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Week2SorterProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.francisco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.francisco" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.francisco.SortTester" />
+      <option name="METHOD_NAME" value="testIsSorted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTester.testLargeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Week2SorterProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.francisco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.francisco" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.francisco.SortTester" />
+      <option name="METHOD_NAME" value="testLargeArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTester.testOddSizedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Week2SorterProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.francisco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.francisco" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.francisco.SortTester" />
+      <option name="METHOD_NAME" value="testOddSizedArray" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.SortTester.testLargeArray" />
+        <item itemvalue="JUnit.SortTester" />
+        <item itemvalue="JUnit.SortTester.testAlreadySortedArray" />
+        <item itemvalue="JUnit.SortTester.testOddSizedArray" />
+        <item itemvalue="JUnit.SortTester.testIsSorted" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666381185207</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Insertion Sort added">
+      <created>1666381959291</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666381959291</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +220,7 @@
     <MESSAGE value="Created random unordered array generator and added logging" />
     <MESSAGE value="Bubble sort and Merge sort added, helper class added for checking if already sorted, tests added." />
     <MESSAGE value="Quicksort Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quicksort Added" />
+    <MESSAGE value="Insertion Sort added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Insertion Sort added" />
   </component>
 </project>
